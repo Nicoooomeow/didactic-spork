@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style type="text/css">
+			body,div,ul,li{/* 兼容性 */
+				margin: 0;
+				padding: 0;
+			}
+			#nav{
+				width: 960px;
+				height: 35px;
+				background-color: #E7E7E7;
+				margin:0 auto;/* 居中 */
+				margin-top:30px;
+			}
+			#nav ul{
+				width: 960px;
+				height: 35px;
+			}
+			#nav ul li{
+				float: left;
+				list-style: none;/* 去圆点 */
+				/* width: 100px; */
+				background-color: #E7E7E7;
+				
+				height: 35px;
+				text-align: center;
+				line-height: 35px;
+				/* padding: 0 10px;上下,左右 */
+				/* border: 1px solid #000;*/
+			}
+			#nav ul li a{
+				font-size: 14px;
+				color: #8790A1;
+				text-decoration: none;
+				display: block;
+				float: left;
+				height: 35px;
+				padding: 0 10px;
+			}
+			
+			#nav ul li a:hover {
+				background-color: #85CE02;
+				color: #000;
+				font-size:15px;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="nav">
+			<ul>
+				<li><a href="#">阿里巴巴</a></li><!-- a href="#"表示不进行任何跳转 -->
+				<li><a href="#">腾讯</a></li>
+				<li><a href="#">百度</a></li>
+				<li><a href="#">小米</a></li>
+				<li><a href="#">今日头条</a></li>
+				<li><a href="#">微软</a></li>
+			</ul>
+		</div>
+	</body>
+</html>
