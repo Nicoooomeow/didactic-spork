@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style type="text/css">
+			body,div{
+				margin: 0;
+				padding: 0;
+			}
+			
+			
+			#div1{
+				float: left;
+				margin-left: 10px;
+				margin-top: 10px;
+				width: 100px;
+				height: 100px;
+				background-color: #900;
+				display:inline;/*only for IE*/
+			}
+			#div2{
+				float: left;
+				margin-left: 10px;
+				margin-top: 10px;
+				width: 150px;
+				height: 100px;
+				background-color: #090;
+			}
+			
+			#div3{
+				margin-left: 10px;
+				margin-top: 10px;
+				width: 100px;
+				height: 100px;
+				background-color: #009;
+			}
+			.clear{
+				clear: both;/* 在chrome中,让后续的块儿重启一行 */
+			}
+			
+		</style>
+	</head>
+	<body>
+		<div id="div1"></div>
+		<div id="div2"></div>
+		<!--IE在浮动中的一个bug
+			只要同时满足这三个条件
+			1，块元素
+			2，float：left
+			3，margin-left不为0
+			margin-left会double
+		-->
+		<div class="clear"></div>
+		<div id="div3"></div>
+	</body>
+</html>
