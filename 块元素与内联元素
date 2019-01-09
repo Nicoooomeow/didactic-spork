@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<style type="text/css">
+			body,div{
+				margin: 0;
+				padding: 0;
+			}
+			
+			#div2{
+				width: 100px;
+				height: 200px;
+				background-color: #FF9000;
+			}
+			#div3{
+				width: 100px;
+				height: 100px;
+				background: #000090;
+				color: #FFFFFF;
+			}
+			
+				
+			#aid{
+				display: block;
+				width: 50px;
+				height: 50px;
+				background-color: #000000;
+				color: #FFFFFF;
+			}
+				
+			#aid2{
+				background-color: blanchedalmond;
+			}
+		</style>
+		<title></title>
+	</head>
+	<body>
+		<!--块元素
+				1.容器，可以容纳其他的块元素和内联元素
+				2.块元素，排斥与其他的元素排在同一行
+				3.块元素，width height起作用
+			内联元素：
+				1.容器，只能容纳文本或者其他的内联元素
+				2.内联元素，可以与其他的内联元素排在同一行
+				3.内联元素，width height不起作用
+			display内联元素改成块状元素
+		-->
+		<div id="div1">
+			<div id="div2">块状元素</div>
+			<div id="div3">块状元素3</div>
+			<a id="aid" href="#">内联元素</a>
+			<a id="aid2" href="#">内联元素2</a>
+		</div>
+	</body>
+</html>
